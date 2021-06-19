@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/storage_scene"
+        tools:showPaths="true">
+
+        <com.example.uimdel.weiget.RangView
+            android:id="@+id/group"
+            android:layout_width="@dimen/rang_with"
+            android:layout_height="600dp"
+            android:layout_marginStart="@dimen/group_ms"
+            app:top="@drawable/strorage_column_t_0"
+            app:middle="@drawable/strorage_column_m_0"
+            app:bottom="@drawable/strorage_column_b_0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="200dp"/>
+
+        <com.example.uimdel.weiget.RangView
+            style="@style/rangStyle"
+            android:id="@+id/bot"
+            app:top="@drawable/strorage_column_t_1"
+            app:middle="@drawable/strorage_column_m_1"
+            app:bottom="@drawable/strorage_column_b_1" />
+
+        <com.example.uimdel.weiget.RangView
+            android:id="@+id/bot2"
+            style="@style/rangStyle"
+            app:top="@drawable/strorage_column_t_2"
+            app:middle="@drawable/strorage_column_m_2"
+            app:bottom="@drawable/strorage_column_b_2" />
+
+        <com.example.uimdel.weiget.RangView
+            style="@style/rangStyle"
+            android:id="@+id/bot3"
+            app:top="@drawable/strorage_column_t_3"
+            app:middle="@drawable/strorage_column_m_3"
+            app:bottom="@drawable/strorage_column_b_3" />
+
+        <com.example.uimdel.weiget.RangView
+            android:id="@+id/bot4"
+            style="@style/rangStyle"
+            app:top="@drawable/strorage_column_t_4"
+            app:middle="@drawable/strorage_column_m_4"
+            app:bottom="@drawable/strorage_column_b_4" />
+
+        <com.example.uimdel.weiget.RangView
+            style="@style/rangStyle"
+            android:id="@+id/bot5"
+            app:top="@drawable/strorage_column_t_5"
+            app:middle="@drawable/strorage_column_m_5"
+            app:bottom="@drawable/strorage_column_b_5"/>
+
+        <com.example.uimdel.weiget.RangView
+            android:id="@+id/bot6"
+            style="@style/rangStyle"
+            app:top="@drawable/strorage_column_t_6"
+            app:middle="@drawable/strorage_column_m_6"
+            app:bottom="@drawable/strorage_column_b_6" />
+
+        <com.example.uimdel.weiget.RangView
+            style="@style/rangStyle"
+            android:id="@+id/bot7"
+            app:top="@drawable/strorage_column_t_7"
+            app:middle="@drawable/strorage_column_m_7"
+            app:bottom="@drawable/strorage_column_b_7"/>
+
+        <com.example.uimdel.weiget.RangView
+            android:id="@+id/bot8"
+            style="@style/rangStyle"
+            app:top="@drawable/strorage_column_t_8"
+            app:middle="@drawable/strorage_column_m_8"
+            app:bottom="@drawable/strorage_column_b_8" />
+
+        <Space android:id="@+id/bot_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot2_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot3_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot4_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot5_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot6_space"
+            style="@style/rangStyle" />
+
+        <Space android:id="@+id/bot7_space"
+            style="@style/rangStyle" />
+
+        <TextView
+            android:id="@+id/bot1_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title1"
+            app:layout_constraintTop_toTopOf="@id/group"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:layout_constraintBottom_toTopOf="@id/bot2_title"/>
+
+        <TextView
+            android:id="@+id/bot2_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title2"
+            app:layout_constraintTop_toBottomOf="@id/bot1_title"
+            app:layout_constraintBottom_toTopOf="@id/bot3_title"/>
+
+        <TextView
+            android:id="@+id/bot3_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title3"
+            app:layout_constraintTop_toBottomOf="@id/bot2_title"
+            app:layout_constraintBottom_toTopOf="@id/bot4_title"/>
+
+        <TextView
+            android:id="@+id/bot4_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title4"
+            app:layout_constraintTop_toBottomOf="@id/bot3_title"
+            app:layout_constraintBottom_toTopOf="@id/bot5_title"/>
+
+        <TextView
+            android:id="@+id/bot5_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title5"
+            app:layout_constraintTop_toBottomOf="@id/bot4_title"
+            app:layout_constraintBottom_toTopOf="@id/bot6_title"/>
+
+        <TextView
+            android:id="@+id/bot6_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title6"
+            app:layout_constraintTop_toBottomOf="@id/bot5_title"
+            app:layout_constraintBottom_toTopOf="@id/bot7_title"/>
+
+        <TextView
+            android:id="@+id/bot7_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title7"
+            app:layout_constraintTop_toBottomOf="@id/bot6_title"
+            app:layout_constraintBottom_toTopOf="@id/bot8_title"/>
+
+        <TextView
+            android:id="@+id/bot8_title"
+            style="@style/RangTitleStyle"
+            android:text="@string/title8"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintTop_toBottomOf="@id/bot7_title"
+            app:layout_constraintBottom_toBottomOf="@id/group"/>
+
+
+        <TextView
+            android:id="@+id/bot1_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot1_title"
+            app:layout_constraintTop_toBottomOf="@id/bot1_title"/>
+
+        <TextView
+            android:id="@+id/bot2_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot2_title"
+            app:layout_constraintTop_toBottomOf="@id/bot2_title"/>
+
+        <TextView
+            android:id="@+id/bot3_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot3_title"
+            app:layout_constraintTop_toBottomOf="@id/bot3_title"/>
+
+        <TextView
+            android:id="@+id/bot4_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot4_title"
+            app:layout_constraintTop_toBottomOf="@id/bot4_title"/>
+
+        <TextView
+            android:id="@+id/bot5_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot5_title"
+            app:layout_constraintTop_toBottomOf="@id/bot5_title"/>
+
+        <TextView
+            android:id="@+id/bot6_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot6_title"
+            app:layout_constraintTop_toBottomOf="@id/bot6_title"/>
+
+        <TextView
+            android:id="@+id/bot7_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot7_title"
+            app:layout_constraintTop_toBottomOf="@id/bot7_title"/>
+
+        <TextView
+            android:id="@+id/bot8_size"
+            style="@style/RangSizeStyle"
+            app:layout_constraintStart_toStartOf="@id/bot8_title"
+            app:layout_constraintTop_toBottomOf="@id/bot8_title"/>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.core.widget.NestedScrollView>
+

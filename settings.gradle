@@ -1,0 +1,3 @@
+include ':uimdel'
+include ':app'
+rootProject.name = "My Application"

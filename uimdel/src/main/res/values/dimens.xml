@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rang_with">334px</dimen>
+    <dimen name="rang_top_height">80px</dimen>
+    <dimen name="rang_bottom_height">40px</dimen>
+    <dimen name="rang_min_height">120px</dimen>
+    <dimen name="group_ms">40dp</dimen>
+
+    <dimen name="rang_middle_top">40px</dimen>
+    <dimen name="rang_bottom_top">20px</dimen>
+
+    <dimen name="rang_title_ms">100dp</dimen>
+</resources>

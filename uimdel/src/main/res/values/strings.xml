@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">布局测试</string>
+
+    <string name="title1">其他</string>
+    <string name="title2">应用和数据</string>
+    <string name="title3">图片</string>
+    <string name="title4">音频</string>
+    <string name="title5">视频</string>
+    <string name="title6">安装包</string>
+    <string name="title7">文档</string>
+    <string name="title8">系统固件</string>
 </resources>

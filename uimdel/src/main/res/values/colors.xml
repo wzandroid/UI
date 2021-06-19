@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="storage_pie_line_1">#2EDE8B</color>
+    <color name="storage_pie_line_2">#2682ED</color>
+    <color name="storage_pie_line_3">#8749EF</color>
+    <color name="storage_pie_line_4">#CF30EE</color>
+    <color name="storage_pie_line_5">#FE4137</color>
+    <color name="storage_pie_line_6">#FF9219</color>
+    <color name="storage_pie_line_7">#FFD032</color>
+    <color name="storage_pie_line_8">#CFD6F0</color>
 </resources>
