@@ -63,13 +63,6 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-<!--        <Constraint android:id="@+id/group"-->
-<!--            android:layout_width="@dimen/rang_with"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_marginStart="@dimen/group_ms"-->
-<!--            motion:layout_constraintStart_toStartOf="parent"-->
-<!--            motion:layout_constraintTop_toTopOf="parent"-->
-<!--            motion:layout_constraintBottom_toBottomOf="parent"/>-->
 
         <Constraint android:id="@+id/bot"
             style="@style/rangStyle"
@@ -113,13 +106,6 @@
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
-<!--        <Constraint android:id="@+id/group"-->
-<!--            android:layout_width="@dimen/rang_with"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_marginStart="@dimen/group_ms"-->
-<!--            motion:layout_constraintStart_toStartOf="parent"-->
-<!--            motion:layout_constraintTop_toTopOf="parent"-->
-<!--            motion:layout_constraintBottom_toBottomOf="parent"/>-->
 
         <Constraint android:id="@+id/bot"
             style="@style/rangStyle"

@@ -2,6 +2,7 @@ package com.example.uimdel.weiget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +34,26 @@ public class RangView extends FrameLayout {
         middleResId = ta.getResourceId(R.styleable.RangView_middle, 0);
         bottomResId = ta.getResourceId(R.styleable.RangView_bottom, 0);
         ta.recycle();
+        init();
+    }
+
+    private void init(){
+        top = findViewById(R.id.top);
+        middle = findViewById(R.id.middle);
+        bottom = findViewById(R.id.bottom);
+        top.getContext().getResources().getColor(R.color.storage_pie_mask);
+        if (topResId != 0){
+            top.setBackgroundResource(topResId);
+            top.setBackgroundTintMode(PorterDuff.Mode.DST);
+        }
+        if (middleResId != 0){
+            middle.setBackgroundResource(middleResId);
+            middle.setBackgroundTintMode(PorterDuff.Mode.DST);
+        }
+        if (bottomResId != 0){
+            bottom.setBackgroundResource(bottomResId);
+            bottom.setBackgroundTintMode(PorterDuff.Mode.DST);
+        }
     }
 
     @Override
@@ -54,20 +75,24 @@ public class RangView extends FrameLayout {
         return super.dispatchTouchEvent(ev);
     }
 
+    public void setTint(boolean isTouch){
+        if (isTouch && top.getBackgroundTintMode() != PorterDuff.Mode.DST){
+            top.setBackgroundTintMode(PorterDuff.Mode.DST);
+            middle.setBackgroundTintMode(PorterDuff.Mode.DST);
+            bottom.setBackgroundTintMode(PorterDuff.Mode.DST);
+            return;
+        }
+        if (!isTouch && top.getBackgroundTintMode() != PorterDuff.Mode.SRC_ATOP){
+            top.setBackgroundTintMode(PorterDuff.Mode.SRC_ATOP);
+            middle.setBackgroundTintMode(PorterDuff.Mode.SRC_ATOP);
+            bottom.setBackgroundTintMode(PorterDuff.Mode.SRC_ATOP);
+        }
+    }
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        top = findViewById(R.id.top);
-        middle = findViewById(R.id.middle);
-        bottom = findViewById(R.id.bottom);
-        if (topResId != 0){
-            top.setImageResource(topResId);
-        }
-        if (middleResId != 0){
-            middle.setBackgroundResource(middleResId);
-        }
-        if (bottomResId != 0){
-            bottom.setImageResource(bottomResId);
-        }
+
+
     }
 }

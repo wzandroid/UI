@@ -5,4 +5,10 @@
         <attr name="middle" format="reference" />
         <attr name="bottom" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="LineView">
+        <attr name="lineColor" format="color"/>
+        <attr name="lineCorner" format="dimension"/>
+        <attr name="lineWith" format="dimension"/>
+    </declare-styleable>
 </resources>

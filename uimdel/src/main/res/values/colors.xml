@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="storage_pie_mask">#CCFFFFFF</color>
+
     <color name="storage_pie_line_1">#2EDE8B</color>
     <color name="storage_pie_line_2">#2682ED</color>
     <color name="storage_pie_line_3">#8749EF</color>

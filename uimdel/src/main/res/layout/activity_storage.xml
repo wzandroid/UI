@@ -211,6 +211,95 @@
             app:layout_constraintStart_toStartOf="@id/bot8_title"
             app:layout_constraintTop_toBottomOf="@id/bot8_title"/>
 
+        <ImageView
+            android:id="@+id/iv_arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot1_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot1_size"
+            app:layout_constraintStart_toEndOf="@id/bot1_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot2_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot2_size"
+            app:layout_constraintStart_toEndOf="@id/bot2_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot3_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot3_size"
+            app:layout_constraintStart_toEndOf="@id/bot3_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot4_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot4_size"
+            app:layout_constraintStart_toEndOf="@id/bot4_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot5_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot5_size"
+            app:layout_constraintStart_toEndOf="@id/bot5_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot6_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot6_size"
+            app:layout_constraintStart_toEndOf="@id/bot6_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot7_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot7_size"
+            app:layout_constraintStart_toEndOf="@id/bot7_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_arrow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/bot8_title"
+            app:layout_constraintBottom_toBottomOf="@id/bot8_size"
+            app:layout_constraintStart_toEndOf="@id/bot8_title"
+            android:src="@drawable/storage_item_right_arrow" />
+
+        <com.example.uimdel.weiget.LineView
+            android:id="@+id/lineView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/group"
+            app:layout_constraintBottom_toBottomOf="@id/group"
+            app:layout_constraintStart_toEndOf="@id/group"
+            app:layout_constraintEnd_toStartOf="@id/bot1_title"/>
+
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </androidx.core.widget.NestedScrollView>
 
